@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>A-Very Special Treat | Sign Up Page</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/signUpPage.css" />
+  </head>
+  <body>
+    <!-- For Bloby -->
+    <div class="bg"></div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="signUp">
+        <!-- Link to Home -->
+        <div class="back">
+          <a href="/html/loginPage.html">
+            <img src="/images/icons/arrowLeft.svg" /><span id="backText"
+              >Back to Login Page</span
+            >
+          </a>
+        </div>
+        <h2>Sign Up</h2>
+        <form>
+          <!-- Email Input -->
+          <input type="text" id="email" name="email" placeholder="Email" />
+
+          <!-- Password Input -->
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+
+          <!-- Confirm Password Input -->
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm Password"
+          />
+
+          <!-- Phone Number Input -->
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="Phone Number"
+          />
+
+          <!-- Terms and Condition -->
+          <div class="terms">
+            <label class="customCheckbox">
+              <input type="checkbox" name="compliance" />
+              <span class="checkmark"></span>
+              <span class="labelText">
+                I agree with the <a href="#">Terms & Conditions</a> and
+                <a href="#">Privacy Policy</a>.
+              </span>
+            </label>
+          </div>
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- Alternative Sign Up -->
+      <div class="altSignUp">
+        <span class="altSignUpText">or sign up with</span>
+
+        <!-- Facebook -->
+        <div class="altIcon">
+          <a href="https://www.facebook.com/" title="Login with Facebook"
+            ><img
+              src="/images/icons/facebook.png"
+              class="linkIcon"
+              alt="Facebook Icon"
+          /></a>
+
+          <!-- Google -->
+          <a
+            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&dsh=S1983268485%3A1765085160950916&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=Ac2yZaVCoPy8O434ZC7v8eVbx9LemKyt84PiFiXRlqh6lhEL-ap27_cJhtN0zjvPk09trE9da5U&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+            title="Login with Google"
+            ><img
+              src="/images/icons/google.png"
+              class="linkIcon"
+              alt="Google Icon"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="/js/signUpPage.js"></script>
+  </body>
+</html>
