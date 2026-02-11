@@ -1,0 +1,688 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  background-color: #fffdf8;
+  overflow-x: hidden;
+}
+
+/* header */
+.header {
+  background-color: #6a4a3f;
+  margin: 0 0 5vh 0;
+}
+
+/* bestsellers section */
+.bestsellers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopName1 {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #f8c9d2;
+}
+
+.bestSellersTitle {
+  font-family: "Lobster", sans-serif;
+  color: #6a4a3f;
+}
+
+.bestsellersGrid {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  gap: 3vh;
+}
+
+.foodItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.foodItem img {
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+}
+
+.foodName {
+  color: #6a4a3f;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  margin-top: 1.5vh;
+  text-transform: capitalize;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.description1 {
+  color: #6a4a3f;
+  text-align: center;
+}
+
+#viewMoreBtn {
+  border-radius: 50px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+  background-color: #f8c9d2;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.4);
+}
+
+#viewMoreBtn:hover {
+  transform: translateY(-0.5vh);
+}
+
+/* A-very Special Story Section */
+.storySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e9e0f7;
+}
+
+.storySectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.storyTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#storySectionImage {
+  background-image: url("/images/family.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.howItAllBegan {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+}
+
+.specialStory {
+  font-family: "Lobster", sans-serif;
+  font-weight: lighter;
+  color: #6a4a3f;
+}
+
+.description2 {
+  color: #6a4a3f;
+  text-align: left;
+}
+
+#moreAboutUsButton {
+  border-radius: 50px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+  background-color: #fffdf8;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.4);
+}
+
+#moreAboutUsButton:hover {
+  transform: translateY(-0.5vh);
+}
+
+/* A-very Special Season Section */
+.seasonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fffdf8;
+}
+
+.seasonSectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seasonTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#seasonSectionImage {
+  background-image: url("/images/ensaymada.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.madeSpecialJustForYou {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+}
+
+.specialSeason {
+  font-family: "Lobster", sans-serif;
+  color: #6a4a3f;
+}
+
+.description3 {
+  color: #6a4a3f;
+  text-align: left;
+}
+
+#createSpecialOrderButton {
+  border-radius: 50px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+  background-color: #f8c9d2;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.4);
+}
+
+#createSpecialOrderButton:hover {
+  transform: translateY(-0.5vh);
+}
+
+/* A Taste of Their Experience */
+.reviewSection {
+  background-color: #fffdf8;
+  width: 100%;
+  height: 100%;
+  background-image: url("/blobs/home.svg");
+  background-repeat: no-repeat;
+}
+
+.reviewSectionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopName2 {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+}
+
+.tasteOfTheirExperienceTitle {
+  font-family: "Lobster", sans-serif;
+  color: #6a4a3f;
+}
+
+.commentsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.testimonial-item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex: 1;
+}
+
+.testimonial-img {
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+  box-shadow: 0 0.8vh 1.6vh rgba(106, 74, 63, 0.3);
+  z-index: 2;
+}
+
+.testimonial-box {
+  background-color: #fffdf8;
+  box-shadow: 0 0.5vh 1.5vh rgba(106, 74, 63, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.commentTitle {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+}
+
+.commentText {
+  color: #6a4a3f;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+#viewMoreCommentsButton {
+  border-radius: 50px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+  background-color: #dacff3;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.4);
+}
+
+#viewMoreCommentsButton:hover {
+  transform: translateY(-0.5vh);
+}
+
+@media (min-width: 901px) {
+  /* bestsellers section */
+  .bestsellersSection {
+    padding-bottom: 5vh;
+  }
+
+  .shopName1 {
+    padding: 5.5vh 0 0 0;
+    font-size: 3vh;
+  }
+
+  .bestSellersTitle {
+    font-size: 10vh;
+    padding-bottom: 4vh;
+  }
+
+  .bestsellersGrid {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2vh 0;
+  }
+
+  .foodItem img {
+    width: 28vh;
+    height: 28vh;
+  }
+
+  .foodName {
+    font-size: 3vh;
+  }
+
+  .description1 {
+    font-size: 3vh;
+    padding: 2vh 15vh 2vh 15vh;
+    margin: 3vh 0 3vh 0;
+  }
+
+  #viewMoreBtn {
+    padding: 1.2vh 4vh;
+    font-size: 3vh;
+    width: 23vh;
+  }
+
+  /* A-very Special Story Section */
+  .storySection {
+    padding: 10vh;
+  }
+
+  .storyTextContainer {
+    flex: 0 0 0 70%;
+    max-width: 70%;
+    padding-right: 10vh;
+  }
+
+  #storySectionImage {
+    flex: 0 0 0 30%;
+    max-width: 30%;
+    height: 55vh;
+  }
+
+  .howItAllBegan {
+    font-size: 3vh;
+  }
+
+  .specialStory {
+    font-size: 10vh;
+    margin-bottom: 6vh;
+  }
+
+  .description2 {
+    font-size: 3vh;
+    text-align: left;
+    padding-top: 3vh;
+    padding-bottom: 6vh;
+  }
+
+  #moreAboutUsButton {
+    padding: 1.2vh 4vh;
+    font-size: 3vh;
+    width: 30vh;
+  }
+
+  /* A-very Special Season Section */
+  .seasonSection {
+    padding: 10vh;
+  }
+
+  .seasonTextContainer {
+    flex: 0 0 0 70%;
+    max-width: 70%;
+    padding-left: 10vh;
+  }
+
+  #seasonSectionImage {
+    flex: 0 0 0 30%;
+    max-width: 30%;
+    height: 55vh;
+  }
+
+  .madeSpecialJustForYou {
+    font-size: 3vh;
+  }
+
+  .specialSeason {
+    font-size: 10vh;
+    margin-bottom: 6vh;
+  }
+
+  .description3 {
+    font-size: 3vh;
+    text-align: left;
+    padding-top: 3vh;
+    padding-bottom: 6vh;
+  }
+
+  #createSpecialOrderButton {
+    padding: 1.2vh 4vh;
+    font-size: 3vh;
+    width: 45vh;
+  }
+
+  /* A Taste of Their Experience */
+  .reviewSection {
+    padding: 10vh;
+    background-position-x: -80vh;
+    background-position-y: -5vh;
+    background-size: 160%;
+  }
+
+  .shopName2 {
+    padding-top: 4vh;
+    font-size: 3vh;
+  }
+
+  .tasteOfTheirExperienceTitle {
+    font-size: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .commentsContainer {
+    gap: 3vh;
+    padding: 0 2vh;
+  }
+
+  .testimonial-item {
+    max-width: 45vh;
+    margin: 0 2vh;
+  }
+
+  .testimonial-img {
+    width: 25vh;
+    height: 25vh;
+    margin-right: -20vh;
+    margin-bottom: 35vh;
+  }
+
+  .testimonial-box {
+    padding: 3vh 2vh 3vh 2vh;
+    min-height: 40vh;
+  }
+
+  .commentTitle {
+    width: 40vh;
+    font-size: 3.5vh;
+    padding-left: 20vh;
+    margin-bottom: 1.5vh;
+  }
+
+  .commentText {
+    font-size: 2.5vh;
+    line-height: 1.3;
+  }
+
+  #viewMoreCommentsButton {
+    padding: 1.2vh 4vh;
+    font-size: 3vh;
+    width: 40vh;
+  }
+}
+
+@media (max-width: 900px) {
+  /* bestsellers section */
+  .bestsellersSection {
+    padding-bottom: 5vh;
+  }
+
+  .shopName1 {
+    padding: 4vh 0 0 0;
+    font-size: 2vh;
+  }
+
+  .bestSellersTitle {
+    font-size: 6vh;
+    padding-bottom: 3vh;
+    text-align: center;
+  }
+
+  .bestsellersGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2vh;
+  }
+
+  .foodItem img {
+    width: 16vh;
+    height: 16vh;
+  }
+
+  .foodName {
+    font-size: 2.5vh;
+  }
+
+  .description1 {
+    font-size: 2vh;
+    padding: 2vh 4vh;
+    margin: 2vh 0 3vh 0;
+    line-height: 3vh;
+  }
+
+  #viewMoreBtn {
+    padding: 1vh 3vh;
+    font-size: 2vh;
+    width: 25vh;
+  }
+
+  /* A-very Special Story Section */
+  .storySection {
+    padding: 5vh 3vh;
+    flex-direction: column;
+  }
+
+  .storySectionContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .storyTextContainer {
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+    order: 2;
+  }
+
+  #storySectionImage {
+    height: 35vh;
+    margin-bottom: 4vh;
+  }
+
+  .howItAllBegan {
+    font-size: 2vh;
+    margin-top: 2vh;
+  }
+
+  .specialStory {
+    font-size: 6vh;
+    margin-bottom: 3vh;
+    text-align: center;
+  }
+
+  .description2 {
+    font-size: 2vh;
+    text-align: center;
+    padding: 0 2vh 4vh 2vh;
+    line-height: 3vh;
+  }
+
+  #moreAboutUsButton {
+    padding: 1vh 3vh;
+    font-size: 2vh;
+    width: 25vh;
+  }
+
+  /* A-very Special Season Section */
+  .seasonSection {
+    padding: 5vh 3vh;
+  }
+
+  .seasonSectionContainer {
+    flex-direction: column;
+  }
+
+  .seasonTextContainer {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  #seasonSectionImage {
+    height: 35vh;
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  .madeSpecialJustForYou {
+    font-size: 2vh;
+  }
+
+  .specialSeason {
+    font-size: 6vh;
+    text-align: center;
+  }
+
+  .description3 {
+    font-size: 2vh;
+    text-align: center;
+    padding: 2vh 2vh 4vh 2vh;
+    line-height: 3vh;
+  }
+
+  #createSpecialOrderButton {
+    padding: 1vh 3vh;
+    font-size: 2vh;
+    width: 35vh;
+  }
+
+  /* A Taste of Their Experience */
+  .reviewSection {
+    padding: 5vh 2vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .shopName2 {
+    padding-top: 2vh;
+    font-size: 2vh;
+  }
+
+  .tasteOfTheirExperienceTitle {
+    font-size: 6vh;
+    padding-bottom: 8vh;
+    text-align: center;
+  }
+
+  .commentsContainer {
+    gap: 8vh;
+    padding: 0 2vh;
+    flex-direction: column;
+  }
+
+  .testimonial-item {
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .testimonial-img {
+    width: 15vh;
+    height: 15vh;
+    margin-right: 0;
+    margin-bottom: -7.5vh;
+    z-index: 2;
+  }
+
+  .testimonial-box {
+    padding: 9vh 3vh 4vh 3vh;
+    min-height: auto;
+    width: 100%;
+    align-items: center;
+  }
+
+  .commentTitle {
+    width: 100%;
+    font-size: 2.5vh;
+    padding-left: 0;
+    margin-bottom: 2vh;
+    text-align: center;
+  }
+
+  .commentText {
+    font-size: 2vh;
+    line-height: 3vh;
+  }
+
+  #viewMoreCommentsButton {
+    margin-top: 5vh;
+    padding: 1vh 3vh;
+    font-size: 2vh;
+    width: 30vh;
+  }
+}

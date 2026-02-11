@@ -1,0 +1,354 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  background-color: #fffdf8;
+  overflow-x: hidden;
+}
+
+/* header */
+.header {
+  background-color: #6a4a3f;
+  margin: 0 0 5vh 0;
+}
+
+.headerSection {
+  background-color: #fffdf8;
+  background-image: url("/blobs/about.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -40vh top -30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding-top: 20vh;
+  gap: 10vh;
+}
+
+.mainHeaderTitle {
+  font-family: "Lobster", sans-serif;
+  font-weight: normal;
+  color: #6a4a3f;
+  line-height: 1.1;
+}
+
+.headerImage {
+  object-fit: cover;
+}
+
+.headerDescriptionContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8vh;
+  padding-bottom: 8vh;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.descriptionText {
+  color: #6a4a3f;
+  text-align: justify;
+  font-family: "Nunito", sans-serif;
+}
+
+.storySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e9e0f7;
+}
+
+.storySectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.storyTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#promiseImage {
+  background-image: url("/images/extras/cinnamonRoll2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.specialStory {
+  font-family: "Lobster", sans-serif;
+  font-weight: lighter;
+  color: #6a4a3f;
+}
+
+.description2 {
+  color: #6a4a3f;
+  text-align: justify;
+}
+
+.seasonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fffdf8;
+}
+
+.seasonSectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.seasonTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#craftingJoyImage {
+  background-image: url("/images/extras/rolls.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.specialSeason {
+  font-family: "Lobster", sans-serif;
+  color: #6a4a3f;
+}
+
+.description3 {
+  color: #6a4a3f;
+  text-align: justify;
+}
+
+#createSpecialOrderButton {
+  border-radius: 50px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  color: #6a4a3f;
+  background-color: #f8c9d2;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.4);
+}
+
+#createSpecialOrderButton:hover {
+  transform: translateY(-0.5vh);
+}
+
+@media (min-width: 901px) {
+  .mainHeaderTitle {
+    font-size: 10vh;
+  }
+
+  .headerImage {
+    width: 60vh;
+    height: 36vh;
+  }
+
+  .descriptionText {
+    font-size: 3vh;
+    padding: 2vh 15vh;
+    margin: 0;
+  }
+
+  .storySection {
+    padding: 10vh;
+  }
+
+  .storyTextContainer {
+    flex: 0 0 0 70%;
+    max-width: 70%;
+    padding-left: 10vh;
+  }
+
+  #promiseImage {
+    flex: 0 0 0 30%;
+    max-width: 30%;
+    height: 55vh;
+  }
+
+  .specialStory {
+    font-size: 10vh;
+    margin-bottom: 6vh;
+  }
+
+  .description2 {
+    font-size: 3vh;
+    padding-bottom: 6vh;
+    line-height: 1.5;
+  }
+
+  .seasonSection {
+    padding: 10vh;
+  }
+
+  .seasonTextContainer {
+    flex: 0 0 0 70%;
+    max-width: 70%;
+    padding-right: 10vh;
+  }
+
+  #craftingJoyImage {
+    flex: 0 0 0 30%;
+    max-width: 30%;
+    height: 55vh;
+  }
+
+  .specialSeason {
+    font-size: 10vh;
+    margin-bottom: 6vh;
+  }
+
+  .description3 {
+    font-size: 3vh;
+    padding-bottom: 6vh;
+    line-height: 1.5;
+  }
+
+  #createSpecialOrderButton {
+    padding: 1.2vh 4vh;
+    font-size: 3vh;
+    width: 45vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .headerSection {
+    background-position: right -20vh top -10vh;
+    padding-bottom: 5vh;
+  }
+
+  .headerContent {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    gap: 5vh;
+  }
+
+  .mainHeaderTitle {
+    font-size: 8vh;
+    text-align: center;
+  }
+
+  .headerImage {
+    width: 90%;
+    height: 30vh;
+  }
+
+  .headerDescriptionContainer {
+    padding: 0 3vh;
+    margin-top: 5vh;
+  }
+
+  .descriptionText {
+    font-size: 2vh;
+    line-height: 3vh;
+    padding: 0 10vh;
+  }
+
+  .storySection {
+    padding: 5vh 3vh;
+  }
+
+  .storySectionContainer {
+    flex-direction: column;
+  }
+
+  #promiseImage {
+    order: 1;
+    height: 35vh;
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  .storyTextContainer {
+    order: 2;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .specialStory {
+    font-size: 6vh;
+    margin-bottom: 3vh;
+    text-align: center;
+  }
+
+  .description2 {
+    font-size: 2vh;
+    text-align: center;
+    padding: 0 2vh 4vh 2vh;
+    line-height: 3vh;
+  }
+
+  .seasonSection {
+    padding: 5vh 3vh;
+  }
+
+  .seasonSectionContainer {
+    flex-direction: column-reverse;
+  }
+
+  .seasonTextContainer {
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  #craftingJoyImage {
+    height: 35vh;
+    width: 100%;
+    margin-bottom: 4vh;
+  }
+
+  .specialSeason {
+    font-size: 6vh;
+    text-align: center;
+  }
+
+  .description3 {
+    font-size: 2vh;
+    text-align: center;
+    padding: 2vh 2vh 4vh 2vh;
+    line-height: 3vh;
+  }
+
+  #createSpecialOrderButton {
+    padding: 1vh 3vh;
+    font-size: 2vh;
+    width: 35vh;
+  }
+}

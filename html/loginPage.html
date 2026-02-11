@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>A-Very Special Treat | Login Page</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/loginPage.css" />
+  </head>
+  <body>
+    <!-- For Bloby -->
+    <div class="bg"></div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="login">
+        <!-- Link to Home -->
+        <div class="back">
+          <a href="index.html">
+            <img src="/images/icons/arrowLeft.svg" /><span id="backText"
+              >Back to Home Page</span
+            >
+          </a>
+        </div>
+
+        <h2>Login</h2>
+        <form>
+          <!-- Email Input -->
+          <input type="text" id="email" name="email" placeholder="Email" />
+
+          <!-- Password Input -->
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+
+          <a href=""><span class="forgot">Forgot Password?</span></a>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <!-- Alternative Login -->
+      <div class="altLogin">
+        <span class="altLoginText">or login with</span>
+
+        <!-- Facebook -->
+        <div class="altIcon">
+          <a href="https://www.facebook.com/" title="Login with Facebook"
+            ><img
+              src="/images/icons/facebook.png"
+              class="linkIcon"
+              alt="Facebook Icon"
+          /></a>
+
+          <!-- Google -->
+          <a
+            href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&dsh=S1983268485%3A1765085160950916&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=Ac2yZaVCoPy8O434ZC7v8eVbx9LemKyt84PiFiXRlqh6lhEL-ap27_cJhtN0zjvPk09trE9da5U&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+            title="Login with Google"
+            ><img
+              src="/images/icons/google.png"
+              class="linkIcon"
+              alt="Google Icon"
+          /></a>
+        </div>
+
+        <!-- Sign Up -->
+        <span class="signUpText"
+          >Don't have an account?
+          <a href="/html/signUpPage.html">Sign Up</a></span
+        >
+      </div>
+    </div>
+
+    <!-- JS Script -->
+    <script src="/js/loginPage.js"></script>
+  </body>
+</html>

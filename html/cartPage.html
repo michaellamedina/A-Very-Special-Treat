@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-Very Special Treat | Cart</title>
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/cartPage.css" />
+  </head>
+  <body>
+    <div class="cartHeader">
+      <div class="headerContent">
+        <a href="/html/productPage.html" class="backToHome">
+          <img src="/images/icons/arrowLeftPink.svg" alt="Back" />
+          <span>Back to Product Page</span>
+        </a>
+        <h1 class="cartTitle">Your Cart</h1>
+      </div>
+    </div>
+
+    <div class="cartContainer">
+      <table class="cartTable">
+        <thead>
+          <tr>
+            <th class="th-product">Product</th>
+            <th class="th-qty">Quantity</th>
+            <th class="th-total">Total</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="bottomSection">
+        <div class="instructionsBox">
+          <label for="specialInstructions" class="instructionLabel"
+            >Special Instructions:</label
+          >
+          <textarea id="specialInstructions" class="instructionArea"></textarea>
+        </div>
+
+        <div class="checkoutBox">
+          <div class="subtotalRow">
+            <span class="subtotalLabel">Subtotal:</span>
+            <span class="subtotalValue">₱450.00</span>
+          </div>
+          <button class="checkoutBtn">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- insert js -->
+    <script src="/js/cartPage.js"></script>
+  </body>
+</html>

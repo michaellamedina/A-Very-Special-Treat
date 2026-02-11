@@ -1,0 +1,351 @@
+/* #FFFDF8, #F8C9D2, #DACFF3, #6A4A3F, #F3DDE2, #E8DFF5, #D47A7A */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* flow */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  /* design */
+  background-color: #fffdf8;
+  background-size: contain;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  color: #6a4a3f;
+  min-height: 100vh;
+}
+
+.bg {
+  /* flow */
+  background-image: url(/blobs/logIn.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.content {
+  grid-column: 2/3;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Back to Home */
+.back {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 5vh 0 1vh 0;
+  cursor: pointer;
+}
+
+.back a {
+  color: #6a4a3f;
+  text-decoration: none;
+}
+
+#backText {
+  position: absolute;
+}
+
+/* Login */
+h2 {
+  font-family: "Lobster", sans-serif;
+  font-weight: lighter;
+  color: #6a4a3f;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input Icons */
+#email {
+  background-image: url(/images/icons/email.svg);
+}
+
+#password {
+  background-image: url(/images/icons/lock.svg);
+}
+
+input {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 1.5vh;
+  border-radius: 50px;
+  color: #6a4a3f;
+  font-family: "Nunito", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+input.error {
+  outline: none;
+  border-color: #d47a7a !important;
+  box-shadow: 0 0 0.5vh rgba(231, 76, 60, 0.3);
+}
+
+::placeholder {
+  color: #6a4a3f;
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  color: #6a4a3f;
+}
+
+.forgot {
+  cursor: pointer;
+}
+
+button {
+  background-color: #dacff3;
+  border: none;
+  border-radius: 50px;
+  color: #6a4a3f;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  /* effect */
+  box-shadow: 0 0.2vh 0.4vh rgba(0, 0, 0, 0.4);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translateY(-0.5vh);
+}
+
+/* Alternative Login */
+.altLogin {
+  grid-row: 4/5;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2vh 0;
+}
+
+.altLoginText {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.altLoginText::before,
+.altLoginText::after {
+  content: "";
+  flex: 1;
+}
+
+.altIcon {
+  display: flex;
+  flex-direction: row;
+}
+
+.linkIcon {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (min-width: 901px) {
+  .bg {
+    background-size: 150vh;
+    grid-column: 1/2;
+    background-position-x: 100%;
+    background-position-y: 50%;
+  }
+
+  .content {
+    margin: 2vh 9vh 0 0;
+  }
+
+  /* Back to Home */
+  .back img {
+    width: 4vh;
+  }
+
+  #backText {
+    font-size: 3vh;
+    padding: 0 0 0 2vh;
+  }
+
+  /* Login */
+  h2 {
+    /* flow */
+    margin: 5vh 8vh;
+    /* design */
+    font-size: 10vh;
+  }
+
+  /* Form */
+  input {
+    /* flow */
+    margin: 0 0 1vh 0;
+    /* design */
+    border: 0.3vh solid #6a4a3f;
+    font-size: 3vh;
+    width: 45vh;
+    height: 5vh;
+    padding: 0 0 0 7vh;
+  }
+
+  .forgot {
+    /* flow */
+    margin: 0 0 0 30vh;
+    font-size: 2.5vh;
+  }
+
+  button {
+    /* flow */
+    margin: 3vh 0;
+    /* design */
+    width: 55vh;
+    height: 5vh;
+    font-size: 3vh;
+  }
+
+  /* Alternative Login */
+  .altLoginText {
+    margin: 2vh 0;
+    font-size: 3vh;
+  }
+
+  .altLoginText::before,
+  .altLoginText::after {
+    border-top: 0.3vh solid #6a4a3f;
+    margin: 0 4vh;
+    transform: translateY(2vh);
+  }
+
+  .linkIcon {
+    /* flow */
+    margin: 2vh 2.5vh;
+    /* design */
+    width: 5vh;
+    height: 5vh;
+    border: 0.4vh solid #6a4a3f;
+    padding: 1vh;
+  }
+
+  .signUpText {
+    font-size: 3vh;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    min-height: 100vh;
+  }
+
+  .bg {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    background-image: url(/blobs/about.svg);
+    background-size: cover;
+    background-position-x: -15vh;
+    background-position-y: -60vh;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    margin: 1vh auto 3vh auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Back to Home */
+  .back {
+    position: absolute;
+    top: 8vh;
+    left: 8vh;
+    margin: 0;
+    width: 30vh;
+  }
+
+  .back img {
+    width: 3vh;
+  }
+
+  #backText {
+    font-size: 2vh;
+    padding: 0 0 0 2vh;
+  }
+
+  /* Login */
+  h2 {
+    /* flow */
+    margin: 5vh 8vh;
+    /* design */
+    font-size: 9vh;
+  }
+
+  /* Form */
+  input {
+    /* flow */
+    margin: 0 0 1vh 0;
+    /* design */
+    border: 0.2vh solid #6a4a3f;
+    font-size: 2vh;
+    width: 28vh;
+    height: 4vh;
+    padding: 0 0 0 7vh;
+  }
+
+  .forgot {
+    /* flow */
+    margin: 0 0 0 19vh;
+    font-size: 1.8vh;
+  }
+
+  button {
+    /* flow */
+    margin: 3vh 0;
+    /* design */
+    width: 35vh;
+    height: 4vh;
+    font-size: 2vh;
+  }
+
+  /* Alternative Login */
+  .altLoginText {
+    margin: 2vh 0;
+    font-size: 2vh;
+  }
+
+  .altLoginText::before,
+  .altLoginText::after {
+    border-top: 0.2vh solid #6a4a3f;
+    width: 12vh;
+    margin: 0 2vh;
+    transform: translateY(1.2vh);
+  }
+
+  .linkIcon {
+    /* flow */
+    margin: 2vh 2.5vh;
+    /* design */
+    width: 3vh;
+    height: 3vh;
+    border: 0.3vh solid #6a4a3f;
+    padding: 0.8vh;
+  }
+
+  .signUpText {
+    font-size: 2vh;
+  }
+}

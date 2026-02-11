@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>A-Very Special Treat | Product Page</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/productPage.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <!-- Logo -->
+      <h1 class="header-logo">A-very Special Treat</h1>
+
+      <!-- Tabs (insert pages) -->
+      <nav id="tabsMenu">
+        <ul class="tabs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/html/aboutPage.html">About</a></li>
+          <li><a href="/html/productPage.html">Products</a></li>
+          <li><a href="/html/reviewsPage.html">Reviews</a></li>
+          <li><a href="/html/contactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Icons -->
+      <div class="header-icons">
+        <img
+          src="/images/icons/user.svg"
+          alt="Profile"
+          class="icon-img"
+          id="profileBtn"
+        />
+        <img
+          src="/images/icons/cart.svg"
+          alt="Cart"
+          class="icon-img"
+          id="cartBtn"
+        />
+
+        <!-- Burger Menu -->
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Quick Links -->
+    <div class="quickLinks">
+      <button class="linkButton" onclick="openTab(event, 'allTab')">All</button>
+      <button class="linkButton" onclick="openTab(event, 'sweetTab')">
+        Sweet Treats
+      </button>
+      <button class="linkButton" onclick="openTab(event, 'pastryTab')">
+        Pastries
+      </button>
+      <button class="linkButton" onclick="openTab(event, 'madeTab')">
+        Made To Order
+      </button>
+    </div>
+
+    <hr class="linkLine" />
+
+    <!-- All -->
+    <div id="allTab" class="mainTab">
+      <!-- Sweets -->
+      <section id="sweetTab" class="sectionTab activeSection">
+        <div class="blobBg pinkBlobSweet"></div>
+
+        <h2 class="title">Sweet Treats</h2>
+
+        <!-- Products -->
+        <div class="productSection">
+          <div class="product">
+            <img src="/images/ubeCrinkles.JPG" alt="Ube Crinkles" />
+            <div class="info">
+              <h3>Ube Crinkles</h3>
+              <span class="price">₱130.00 / 12 pieces</span>
+              <p class="description">
+                Soft, fudge-like purple yam cookies with a moist center,
+                generously coated in confectioner's sugar.
+              </p>
+              <button class="addButton">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="/images/coffeePastillas.JPG" alt="Coffee Pastillas" />
+            <div class="info">
+              <h3>Coffee Pastillas</h3>
+              <span class="price">₱95.00 / 20 pieces</span>
+              <p class="description">
+                Classic milky candies infused with a robust espresso blend,
+                offering a perfect balance of sweet and bitter.
+              </p>
+              <button class="addButton">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="/images/lecheFlan.JPG" alt="Leche Flan" />
+            <div class="info">
+              <h3>Leche Flan</h3>
+              <span class="price">₱180.00 / 1 tub</span>
+              <p class="description">
+                Silky, rich custard topped with a golden caramel syrup. Made
+                with pure egg yolks for a creamy melt-in-your-mouth texture.
+              </p>
+              <button class="addButton">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="/images/brownies.JPG" alt="Chocolate Brownies" />
+            <div class="info">
+              <h3>Chocolate Brownies</h3>
+              <span class="price">₱220.00 / 6 pieces</span>
+              <p class="description">
+                Decadent, chewy fudge brownies with a crackly top, loaded with
+                chocolate chips.
+              </p>
+              <button class="addButton">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pastry -->
+      <section id="pastryTab" class="sectionTab">
+        <div class="blobBg purpleBlobPastry"></div>
+
+        <h2 class="title">Pastries</h2>
+
+        <!-- Products -->
+        <div class="productSection">
+          <div class="product">
+            <img src="/images/empanada.JPG" alt="Special Chicken Empanada" />
+            <div class="info">
+              <h3>Special Chicken Empanada</h3>
+              <span class="price">₱45.00 / 1 piece</span>
+              <p class="description">
+                Golden, flaky crust filled with a savory mix of seasoned
+                chicken, potatoes, carrots, and sweet raisins.
+              </p>
+              <button class="addButton">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="/images/ensaymada.JPG" alt="Classic Ensaymada" />
+            <div class="info">
+              <h3>Classic Ensaymada</h3>
+              <span class="price">₱50.00 / 1 piece</span>
+              <p class="description">
+                Soft, brioche-style sweet dough brushed with butter and topped
+                with sugar and grated cheese.
+              </p>
+              <button class="addButton">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="/images/extras/cinnamonRoll.jpg" alt="Cinnamon Roll" />
+            <div class="info">
+              <h3>Cinnamon Roll</h3>
+              <span class="price">₱85.00 / 1 piece</span>
+              <p class="description">
+                Fluffy dough rolled with rich cinnamon sugar and baked to
+                perfection, finished with a sweet glaze or thick cream cheese
+                frosting.
+              </p>
+              <button class="addButton">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product">
+            <img src="/images/extras/cheeseRoll.jpg" alt="Cheese Roll" />
+            <div class="info">
+              <h3>Cheese Roll</h3>
+              <span class="price">₱50.00 / 1 piece</span>
+              <p class="description">
+                Soft, sweet bread wrapped around a savory cheese stick, topped
+                with buttercream and sugar for a perfect sweet-salty treat.
+              </p>
+              <button class="addButton">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Made -->
+      <section id="madeTab" class="sectionTab">
+        <div class="blobBg pinkBlobMade"></div>
+
+        <h2 class="title">Made To Order</h2>
+
+        <!-- Made Pastry -->
+        <h2 class="title2">Pastries</h2>
+        <div class="productSection2">
+          <div class="product2">
+            <img
+              src="/images/messyChocolateBun2.JPG"
+              alt="Messy Chocolate Bun"
+            />
+            <div class="info">
+              <h3>Messy Chocolate Bun</h3>
+              <span class="price">₱75.00 / 1 piece</span>
+              <p class="description">
+                A chocolate lover's dream—soft bread dipped in chocolate ganache
+                and dusted with premium cocoa powder.
+              </p>
+            </div>
+          </div>
+
+          <div class="product2">
+            <img src="/images/ubePandesal.JPG" alt="Ube Cheese Ensaymada" />
+            <div class="info">
+              <h3>Ube Cheese Ensaymada</h3>
+              <span class="price">₱65.00 / 1 piece</span>
+              <p class="description">
+                A twist on the classic: soft dough filled with real ube halaya
+                and topped with a generous amount of savory cheese.
+              </p>
+            </div>
+          </div>
+
+          <div class="product2">
+            <img src="/images/creamPuff.JPG" alt="Caramel Cream Puff" />
+            <div class="info">
+              <h3>Caramel Cream Puff</h3>
+              <span class="price">₱55.00 / 1 piece</span>
+              <p class="description">
+                Airy choux pastry filled with vanilla custard and topped with a
+                crunchy, sweet caramel glaze.
+              </p>
+            </div>
+          </div>
+
+          <!-- Special Button -->
+          <div class="specialBox">
+            <button class="specialButton">Create Special Order</button>
+          </div>
+        </div>
+
+        <!-- Made Food -->
+        <h2 class="title2">Food</h2>
+        <div class="productSection2">
+          <div class="product2">
+            <img src="/images/bakedMac.JPG" alt="Creamy Baked Mac" />
+            <div class="info">
+              <h3>Creamy Baked Mac</h3>
+              <span class="price">Starts at ₱550.00</span>
+              <p class="description">
+                A generous tray of macaroni tossed in a sweet-style meaty tomato
+                sauce, blanketed with a thick layer of our signature mornay
+                sauce and melted cheese.
+              </p>
+            </div>
+          </div>
+
+          <div class="product2">
+            <img src="/images/carbonara2.JPG" alt="Carbonara" />
+            <div class="info">
+              <h3>Carbonara</h3>
+              <span class="price">Starts at ₱580.00</span>
+              <p class="description">
+                Family-sized serving of fettuccine pasta coated in a rich,
+                velvety white sauce. Loaded with crispy bacon bits, savory ham,
+                and finished with parmesan cheese.
+              </p>
+            </div>
+          </div>
+
+          <div class="product2">
+            <img src="/images/lasagna.JPG" alt="Lasagna" />
+            <div class="info">
+              <h3>Lasagna</h3>
+              <span class="price">Starts at ₱650.00</span>
+              <p class="description">
+                Hearty layers of al dente pasta, premium ground beef simmered in
+                herb-infused tomato sauce, and creamy béchamel, baked to golden
+                perfection.
+              </p>
+            </div>
+          </div>
+
+          <!-- Special Button -->
+          <div class="specialBox">
+            <button class="specialButton">Create Special Order</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <!-- Address -->
+      <div class="footer-address">
+        <img
+          src="/images/icons/location.svg"
+          alt="Location"
+          class="icon-img"
+          id="locationBtn"
+        />
+        <p>453 Plaridel Street, San Roque, Cavite City</p>
+      </div>
+
+      <!-- Logo and Copyright -->
+      <div class="logo-copyright">
+        <h1 class="footer-logo">A-very Special Treat</h1>
+        <p>&copy; 2025 A-very Special Treat</p>
+      </div>
+
+      <!-- Icons -->
+      <div class="footer-icons">
+        <img
+          src="/images/icons/facebook.png"
+          alt="Facebook"
+          class="icon-img fblogo"
+          id="fbBtn"
+        />
+        <img
+          src="/images/icons/email2.svg"
+          alt="Mail"
+          class="icon-img"
+          id="mailBtn"
+        />
+        <img
+          src="/images/icons/phone2.svg"
+          alt="Phone"
+          class="icon-img"
+          id="phoneBtn"
+        />
+      </div>
+    </footer>
+
+    <!-- JS Script -->
+    <script src="/js/main.js"></script>
+    <script src="/js/productPage.js"></script>
+  </body>
+</html>

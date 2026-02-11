@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-very Special Treat Order Form</title>
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/formPage.css" />
+  </head>
+  <body>
+    <div class="formHeader">
+      <div class="headerContent">
+        <a href="/html/productPage.html" class="backToHome">
+          <img src="/images/icons/arrowLeft.svg" alt="Back" />
+          <span>Back to Product Page</span>
+        </a>
+        <h1 class="pageTitle">Order Form</h1>
+      </div>
+    </div>
+
+    <div class="filterSection">
+      <button class="filterBtn activeBtn" id="allBtn">All</button>
+      <button class="filterBtn" id="pastriesBtn">Pastries</button>
+      <button class="filterBtn" id="foodsBtn">Food</button>
+    </div>
+
+    <div class="formContainer">
+      <table class="formTable">
+        <thead>
+          <tr>
+            <th class="th-checkbox"></th>
+            <th class="th-product">Product</th>
+            <th class="th-qty">Quantity</th>
+            <th class="th-var">Variation</th>
+            <th class="th-total">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="productRow pastries">
+            <td class="td-checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="rowCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </td>
+            <td class="td-product">
+              <img
+                src="/images/messyChocolateBun2.JPG"
+                alt="Messy Chocolate Bun"
+                class="productImg"
+              />
+              <div class="productDetails">
+                <h2 class="productName">Messy Chocolate Bun</h2>
+                <p class="unitPrice" data-base-price="75">P75.00</p>
+              </div>
+            </td>
+            <td class="td-qty">
+              <div class="qtyBox">
+                <button class="qtyBtn minus">-</button>
+                <input type="number" class="qtyInput" value="1" min="0" />
+                <button class="qtyBtn plus">+</button>
+              </div>
+            </td>
+            <td class="td-var">
+              <span
+                style="
+                  font-family: 'Baloo 2', sans-serif;
+                  font-weight: bold;
+                  color: #6a4a3f;
+                "
+                >Standard</span
+              >
+            </td>
+            <td class="td-total">
+              <span class="itemTotal">P75.00</span>
+            </td>
+          </tr>
+
+          <tr class="productRow pastries">
+            <td class="td-checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="rowCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </td>
+            <td class="td-product">
+              <img
+                src="/images/ubePandesal.JPG"
+                alt="Ube Cheese Ensaymada"
+                class="productImg"
+              />
+              <div class="productDetails">
+                <h2 class="productName">Ube Cheese Ensaymada</h2>
+                <p class="unitPrice" data-base-price="65">P65.00</p>
+              </div>
+            </td>
+            <td class="td-qty">
+              <div class="qtyBox">
+                <button class="qtyBtn minus">-</button>
+                <input type="number" class="qtyInput" value="1" min="0" />
+                <button class="qtyBtn plus">+</button>
+              </div>
+            </td>
+            <td class="td-var">
+              <span
+                style="
+                  font-family: 'Baloo 2', sans-serif;
+                  font-weight: bold;
+                  color: #6a4a3f;
+                "
+                >Standard</span
+              >
+            </td>
+            <td class="td-total">
+              <span class="itemTotal">P65.00</span>
+            </td>
+          </tr>
+
+          <tr class="productRow pastries">
+            <td class="td-checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="rowCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </td>
+            <td class="td-product">
+              <img
+                src="/images/creamPuff.JPG"
+                alt="Caramel Cream Puff"
+                class="productImg"
+              />
+              <div class="productDetails">
+                <h2 class="productName">Caramel Cream Puff</h2>
+                <p class="unitPrice" data-base-price="55">P55.00</p>
+              </div>
+            </td>
+            <td class="td-qty">
+              <div class="qtyBox">
+                <button class="qtyBtn minus">-</button>
+                <input type="number" class="qtyInput" value="1" min="0" />
+                <button class="qtyBtn plus">+</button>
+              </div>
+            </td>
+            <td class="td-var">
+              <span
+                style="
+                  font-family: 'Baloo 2', sans-serif;
+                  font-weight: bold;
+                  color: #6a4a3f;
+                "
+                >Standard</span
+              >
+            </td>
+            <td class="td-total">
+              <span class="itemTotal">P55.00</span>
+            </td>
+          </tr>
+
+          <tr class="productRow foods">
+            <td class="td-checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="rowCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </td>
+            <td class="td-product">
+              <img
+                src="/images/bakedMac2.JPG"
+                alt="Creamy Baked Mac"
+                class="productImg"
+              />
+              <div class="productDetails">
+                <h2 class="productName">Creamy Baked Mac</h2>
+                <p class="unitPrice">P550.00</p>
+              </div>
+            </td>
+            <td class="td-qty">
+              <div class="qtyBox">
+                <button class="qtyBtn minus">-</button>
+                <input type="number" class="qtyInput" value="1" min="0" />
+                <button class="qtyBtn plus">+</button>
+              </div>
+            </td>
+            <td class="td-var">
+              <div class="varDropdown">
+                <select class="sizeSelect">
+                  <option value="small" data-price="550" selected>Small</option>
+                  <option value="medium" data-price="850">Medium</option>
+                  <option value="large" data-price="1200">Large</option>
+                </select>
+              </div>
+            </td>
+            <td class="td-total">
+              <span class="itemTotal">P550.00</span>
+            </td>
+          </tr>
+
+          <tr class="productRow foods">
+            <td class="td-checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="rowCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </td>
+            <td class="td-product">
+              <img
+                src="/images/carbonara.JPG"
+                alt="Carbonara"
+                class="productImg"
+              />
+              <div class="productDetails">
+                <h2 class="productName">Carbonara</h2>
+                <p class="unitPrice">P580.00</p>
+              </div>
+            </td>
+            <td class="td-qty">
+              <div class="qtyBox">
+                <button class="qtyBtn minus">-</button>
+                <input type="number" class="qtyInput" value="1" min="0" />
+                <button class="qtyBtn plus">+</button>
+              </div>
+            </td>
+            <td class="td-var">
+              <div class="varDropdown">
+                <select class="sizeSelect">
+                  <option value="small" data-price="580" selected>Small</option>
+                  <option value="medium" data-price="900">Medium</option>
+                  <option value="large" data-price="1300">Large</option>
+                </select>
+              </div>
+            </td>
+            <td class="td-total">
+              <span class="itemTotal">P580.00</span>
+            </td>
+          </tr>
+
+          <tr class="productRow foods">
+            <td class="td-checkbox">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="rowCheckbox" />
+                <span class="checkmark"></span>
+              </label>
+            </td>
+            <td class="td-product">
+              <img src="/images/lasagna.JPG" alt="Lasagna" class="productImg" />
+              <div class="productDetails">
+                <h2 class="productName">Lasagna</h2>
+                <p class="unitPrice">P650.00</p>
+              </div>
+            </td>
+            <td class="td-qty">
+              <div class="qtyBox">
+                <button class="qtyBtn minus">-</button>
+                <input type="number" class="qtyInput" value="1" min="0" />
+                <button class="qtyBtn plus">+</button>
+              </div>
+            </td>
+            <td class="td-var">
+              <div class="varDropdown">
+                <select class="sizeSelect">
+                  <option value="small" data-price="650" selected>Small</option>
+                  <option value="medium" data-price="1000">Medium</option>
+                  <option value="large" data-price="1500">Large</option>
+                </select>
+              </div>
+            </td>
+            <td class="td-total">
+              <span class="itemTotal">P650.00</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="bottomSection">
+        <div class="instructionsBox">
+          <label class="instructionLabel">Special Instructions:</label>
+          <textarea class="instructionArea"></textarea>
+        </div>
+
+        <div class="checkoutBox">
+          <div class="subtotalRow">
+            <span class="subtotalLabel">Subtotal:</span>
+            <span class="subtotalValue">₱0.00</span>
+          </div>
+          <button class="checkoutBtn">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <div id="popupContainer"></div>
+    <script src="/js/formPage.js"></script>
+  </body>
+</html>

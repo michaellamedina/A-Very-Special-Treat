@@ -1,0 +1,456 @@
+/* Palette: #FFFDF8, #F8C9D2, #DACFF3, #6A4A3F, #F3DDE2, #E8DFF5, #D47A7A, #9FB89D */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* flow */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* design */
+  background-color: #fffdf8;
+  font-family: "Nunito", sans-serif;
+  font-weight: lighter;
+  color: #6a4a3f;
+}
+
+/* header */
+.header {
+  background-color: #6a4a3f;
+  margin: 0 0 5vh 0;
+}
+
+/* Quick Links */
+.quickLinks {
+  /* flow */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10vh auto 0 auto;
+  width: 95%;
+}
+
+.linkButton {
+  background-color: #6b4c3e;
+  border: none;
+  border-radius: 50px;
+  color: #fffdf8;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.4);
+}
+
+.linkButton:hover {
+  transform: translateY(-0.5vh);
+}
+
+.linkButton.active {
+  background-color: #dacff3;
+  color: #6b4c3e;
+  box-shadow: 0 0.2vh 0.4vh rgba(0, 0, 0, 0.4) inset;
+}
+
+.linkLine {
+  background: #6b4c3e;
+  border: 0;
+  width: 90%;
+}
+
+/* Content */
+.mainTab {
+  width: 100%;
+}
+
+.sectionTab {
+  position: relative;
+  display: none;
+  overflow: hidden;
+}
+
+.activeSection {
+  display: block;
+}
+
+/* Mr. Bloby */
+.blobBg {
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.pinkBlobSweet,
+.purpleBlobPastry {
+  background-image: url(/blobs/productPink.svg);
+  background-size: contain;
+}
+
+.pinkBlobMade {
+  background-image: url(/blobs/productPurple.svg);
+  background-size: contain;
+}
+
+h2.title {
+  font-family: "Lobster", sans-serif;
+  font-weight: lighter;
+  color: #fffdf8;
+  text-shadow: 0.2vh 0.2vh 0.4vh rgba(0, 0, 0, 0.4);
+}
+
+.title2 {
+  /* flow */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: right;
+  /* design */
+  font-family: "Lobster", sans-serif;
+  font-weight: lighter;
+  color: #6a4a3f;
+  width: 100%;
+}
+
+.title2::before {
+  content: "";
+  flex: 1;
+}
+
+h3 {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Products */
+.productSection,
+.productSection2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.productSection2 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product,
+.product2 {
+  display: flex;
+  align-items: center;
+}
+
+.product2 {
+  flex-direction: column;
+  text-align: center;
+}
+
+.product img,
+.product2 img {
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Product Info */
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.price {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.specialBox {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.addButton,
+.specialButton {
+  /* flow */
+  align-self: flex-start;
+  /* design */
+  background-color: #dacff3;
+  color: #6a4a3f;
+  border: none;
+  border-radius: 50px;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0.2vh 0.4vh rgba(0, 0, 0, 0.4);
+  transition: background 0.2s;
+}
+
+.addButton:hover,
+.specialButton:hover {
+  transform: translateY(-0.5vh);
+}
+
+.specialButton {
+  background-color: #f8c9d2;
+  align-self: center;
+}
+
+/* Media Queries */
+@media (min-width: 901px) {
+  body {
+    font-size: 3vh;
+  }
+
+  /* Quick Links */
+  .quickLinks {
+    padding: 4vh 0 4vh 0;
+    gap: 3vh;
+  }
+
+  .linkButton {
+    height: 5vh;
+    width: 32vh;
+    font-size: 3vh;
+  }
+
+  .linkLine {
+    height: 0.3vh;
+    margin: 0 auto 2vh auto;
+  }
+
+  /* Content */
+  .mainTab {
+    width: 100%;
+  }
+
+  .sectionTab {
+    padding: 0.5vh 0;
+    margin: 2vh 0;
+  }
+
+  /* Mr. Bloby */
+  .blobBg {
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .pinkBlobSweet,
+  .purpleBlobPastry,
+  .pinkBlobMade {
+    background-position-x: -10vh;
+    background-position-y: -45vh;
+  }
+
+  h2.title {
+    /* flow */
+    margin: 4vh 0 4vh 10vh;
+    /* design */
+    font-size: 10vh;
+  }
+
+  .title2 {
+    /* flow */
+    margin: 4vh 0 2vh 7vh;
+    padding: 0 15vh 0 0;
+    gap: 7vh;
+    /* design */
+    font-size: 10vh;
+  }
+
+  .title2::before {
+    border-top: 0.3vh solid #6a4a3f;
+    transform: translateY(6vh);
+  }
+
+  h3 {
+    /* flow */
+    margin: 0 0 0.5vh 0;
+    /* design */
+    font-size: 3.5vh;
+  }
+
+  /* Products */
+  .productSection,
+  .productSection2 {
+    gap: 3vh;
+  }
+
+  .productSection2 {
+    margin: 2vh auto;
+  }
+
+  .product,
+  .product2 {
+    gap: 2vh;
+    padding: 2vh;
+  }
+
+  .product img,
+  .product2 img {
+    margin: 0 2vh 0 0;
+    width: 23vh;
+    height: 23vh;
+  }
+
+  /* Product Info */
+  .price {
+    margin: 0 0 2vh 0;
+    font-size: 3vh;
+  }
+
+  .description {
+    margin: 0 0 3vh 0;
+    line-height: 3vh;
+    font-size: 2.5vh;
+  }
+
+  .addButton,
+  .specialButton {
+    padding: 1.2vh 4vh;
+    font-size: 2.5vh;
+  }
+
+  .specialButton {
+    width: 38vh;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 2vh;
+  }
+
+  /* Quick Links */
+  .quickLinks {
+    padding: 3vh 0 3vh 0;
+    gap: 2vh;
+  }
+
+  .linkButton {
+    height: 5vh;
+    width: 40vh;
+    font-size: 2vh;
+  }
+
+  .linkLine {
+    height: 0.3vh;
+    margin: 0 auto 3vh auto;
+  }
+
+  /* Content */
+  .sectionTab {
+    padding: 1vh 0;
+    margin: 2vh 0;
+  }
+
+  /* Mr. Bloby */
+  .blobBg {
+    width: 100vh;
+    height: 100vh;
+  }
+
+  .pinkBlobSweet,
+  .purpleBlobPastry,
+  .pinkBlobMade {
+    background-position-x: -19vh;
+    background-position-y: -60vh;
+  }
+
+  h2.title {
+    /* flow */
+    margin: 3vh 0;
+    /* design */
+    font-size: 6vh;
+    text-align: center;
+  }
+
+  .title2 {
+    /* flow */
+    margin: 3vh;
+    gap: 3vh;
+    width: 90%;
+    /* design */
+    font-size: 6vh;
+    justify-content: center;
+  }
+
+  .title2::before,
+  .title2::after {
+    content: "";
+    flex: 1;
+    border-top: 0.35vh solid #6a4a3f;
+    transform: translateY(4vh);
+  }
+
+  h3 {
+    /* flow */
+    margin: 0 0 1vh 0;
+    /* design */
+    font-size: 3vh;
+  }
+
+  /* Products */
+  .productSection,
+  .productSection2 {
+    grid-template-columns: 1fr;
+    gap: 4vh;
+    margin: 2vh auto;
+  }
+
+  .product,
+  .product2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 1vh;
+    padding: 2vh;
+  }
+
+  .product img,
+  .product2 img {
+    margin: 0 0 2vh 0;
+    width: 25vh;
+    height: 25vh;
+  }
+
+  /* Product Info */
+  .info {
+    align-items: center;
+  }
+
+  .price {
+    margin: 0 0 1.5vh 0;
+    font-size: 2vh;
+  }
+
+  .description {
+    margin: 0 0 2.5vh 0;
+    line-height: 3.5vh;
+    font-size: 1.8vh;
+  }
+
+  .specialBox {
+    margin: 2vh 0 0 0;
+  }
+
+  .addButton,
+  .specialButton {
+    align-self: center;
+    padding: 1vh 3vh;
+    font-size: 2vh;
+  }
+
+  .specialButton {
+    margin: -4vh 0 2vh 0;
+    width: 30vh;
+  }
+}
