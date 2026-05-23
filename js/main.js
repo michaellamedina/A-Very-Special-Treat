@@ -7,17 +7,17 @@ function addSafeListener(id, action) {
 
 // Banner button
 addSafeListener("bannerBtn", function () {
-  window.location.href = "html/productPage.html";
+  window.location.href = "productPage.html";
 });
 
 // Profile icon
 addSafeListener("profileBtn", function () {
-  window.location.href = "html/loginPage.html";
+  window.location.href = "loginPage.html";
 });
 
 // Cart icon
 addSafeListener("cartBtn", function () {
-  window.location.href = "html/cartPage.html";
+  window.location.href = "cartPage.html";
 });
 
 // Facebook logo
